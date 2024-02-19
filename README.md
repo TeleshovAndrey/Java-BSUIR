@@ -6,4 +6,4 @@
 
 {'name': somesing, 'surname': somesing}
 
-https://github.com/TeleshovAndrey/Java-BSUIR/blob/main/springboot-first-app/src/main/java/com/springbool/app/WelcomeController.java
+https://github.com/TeleshovAndrey/Java-BSUIR/blob/main/springboot-first-app/src/main/java/com/springbool/app/WelcomeController.java - Ссылка на контроллер
