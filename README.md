@@ -1,5 +1,6 @@
-Currency Converter API Application
-This repository contains a simple REST API application that converts currency.
+CURRANCY JOB SEARCH API APPLICATION
+
+This repository contains a simple REST API application that show vacancy.
 
 Introduction
 This is a basic REST API application built using Spring Boot framework. The application allows users to finde info about books .
