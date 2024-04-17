@@ -1,9 +1,9 @@
 package com.example.searchjob.repository;
 
-import com.example.searchjob.entity.Vacancy;
+import com.example.searchjob.entity.Employer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface VacancyRepository extends JpaRepository<Vacancy,Long> {
+public interface EmployerRepository extends JpaRepository<Employer, Long> {
 }
