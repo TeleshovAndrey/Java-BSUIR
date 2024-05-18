@@ -18,12 +18,20 @@ public class VacancyController {
         this.vacancyService = vacancyService;
     }
 
-    @GetMapping("/show")
+    @GetMapping()
     public List<Vacancy> getVacancy(@RequestParam(required = false) Long id) {
         if (id != null) {
             List<Vacancy> vacancy = new ArrayList<Vacancy>();
             vacancy.add(vacancyService.getVacancyById(id));
             return vacancy;
+        }
+        return vacancyService.getAllVacancy();
+    }
+
+    @GetMapping("/find")
+    public List<Vacancy> getVacancyFromSalary(@RequestParam(required = false) Long salary) {
+        if (salary != null) {
+            return vacancyService.getVacancyFromSalary(salary);
         }
         return vacancyService.getAllVacancy();
     }

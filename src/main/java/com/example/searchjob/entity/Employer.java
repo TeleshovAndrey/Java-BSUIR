@@ -22,6 +22,6 @@ public class Employer {
     @Column
     private String name;
     @JsonIgnore
-    @OneToMany(mappedBy = "employer")
+    @OneToMany(mappedBy = "employer", cascade = CascadeType.ALL)
     private List<Vacancy> vacancies;
 }

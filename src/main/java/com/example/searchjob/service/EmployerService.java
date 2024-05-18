@@ -1,24 +1,25 @@
 package com.example.searchjob.service;
 
+import com.example.searchjob.cache.EmployerCache;
 import com.example.searchjob.entity.Employer;
 import com.example.searchjob.repository.EmployerRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@AllArgsConstructor
 @Service
 public class EmployerService {
     private final EmployerRepository employerRepository;
-
-    public EmployerService(EmployerRepository employerRepository) {
-        this.employerRepository = employerRepository;
-    }
+    private final EmployerCache employerCache;
 
     public List<Employer> getAllEmployer() {
         return employerRepository.findAll();
     }
 
     public Employer getEmployerById(Long id) {
+        employerCache.get(id);
         return employerRepository.findById(id).orElse(null);
     }
 
