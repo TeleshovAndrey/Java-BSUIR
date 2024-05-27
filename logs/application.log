@@ -1,0 +1,4 @@
+2024-05-23 11:18:52,458 INFO  --- c.e.s.controller.VacancyController : trying POST endpoint /vacancy/add
+2024-05-23 11:18:52,701 ERROR --- c.e.s.e.GlobalExceptionHandler : ERROR 500 - Unable to find com.example.searchjob.entity.Employer with id 0
+2024-05-23 11:19:38,074 ERROR --- c.e.s.e.GlobalExceptionHandler : ERROR 400 - Bad request
+2024-05-23 11:19:55,160 INFO  --- c.e.s.controller.VacancyController : trying POST endpoint /vacancy/add

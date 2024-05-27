@@ -17,13 +17,11 @@ public class VacancyCache {
     public void put(Long id, Vacancy vacancy) {
         if (cache.size() < 10) {
             cache.put(id, vacancy);
-        }
-        else {
+        } else {
             cache.clear();
             cache.put(id, vacancy);
         }
     }
-
 
     public void remove(Long id) {
         cache.remove(id);

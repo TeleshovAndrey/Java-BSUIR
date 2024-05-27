@@ -17,6 +17,9 @@ public class EmployerCache {
     public void put(Long id, Employer employer) {
         if (cache.size() < 10) {
             cache.put(id, employer);
+        } else {
+            cache.clear();
+            cache.put(id, employer);
         }
     }
 

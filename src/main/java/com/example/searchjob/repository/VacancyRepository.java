@@ -11,5 +11,5 @@ import java.util.List;
 public interface VacancyRepository extends JpaRepository<Vacancy,Long> {
 
     @Query("SELECT v FROM Vacancy v WHERE v.salary >= :salary")
-    List<Vacancy>findVacancyFromSalary(Long salary);
+    List<Vacancy> findVacancyFromSalary(Long salary);
 }

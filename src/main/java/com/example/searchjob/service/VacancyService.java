@@ -35,7 +35,9 @@ public class VacancyService {
 
     public void deleteVacancy(Long id) {
         Vacancy vacancyBuffer = vacancyRepository.findById(id).orElse(null);
-        if (vacancyBuffer != null) vacancyRepository.deleteById(id);
+        if (vacancyBuffer != null) {
+            vacancyRepository.deleteById(id);
+        }
     }
 
     public Vacancy updateVacancy(String title, Long id, String description, Long salary) {

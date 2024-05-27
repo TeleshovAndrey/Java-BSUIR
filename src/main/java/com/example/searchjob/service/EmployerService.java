@@ -29,7 +29,9 @@ public class EmployerService {
 
     public void deleteEmployer(Long id) {
         Employer vacancyBuffer = employerRepository.findById(id).orElse(null);
-        if (vacancyBuffer != null) employerRepository.deleteById(id);
+        if (vacancyBuffer != null) {
+            employerRepository.deleteById(id);
+        }
     }
 
     public Employer updateEmployer(String name, Long id) {
